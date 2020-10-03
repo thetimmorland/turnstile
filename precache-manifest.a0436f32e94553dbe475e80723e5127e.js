@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0c92339fa9c88ee213ce14e16b6fe4b",
+    "revision": "c8f2dd5f3740880810e1cf54e7e0b19d",
     "url": "/turnstile/index.html"
   },
   {
-    "revision": "945e67e50a71fc3c1838",
+    "revision": "69366cfb79a4c1e08341",
     "url": "/turnstile/static/css/main.3faa8f6a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/turnstile/static/js/2.9f0c8c41.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "945e67e50a71fc3c1838",
-    "url": "/turnstile/static/js/main.2d275553.chunk.js"
+    "revision": "69366cfb79a4c1e08341",
+    "url": "/turnstile/static/js/main.79fd5635.chunk.js"
   },
   {
     "revision": "7aeac238302a42f47d84",
