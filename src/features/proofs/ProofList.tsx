@@ -1,15 +1,20 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "app/store";
-import { AppBar, Toolbar, Typography, Button, Fab } from "@material-ui/core";
+import { Fab } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import AddIcon from "@material-ui/icons/Add";
+import Navbar from "app/Navbar";
+import { RootState } from "app/store";
+import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   fab: {
     position: "absolute",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
+  },
+  extendedIcon: {
+    marginRight: theme.spacing(1),
   },
 }));
 
@@ -20,14 +25,17 @@ const ProofList = () => {
 
   return (
     <div>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6">Proofs</Typography>
-        </Toolbar>
-      </AppBar>
+      <Navbar />
       {renderedProofs}
-      <Fab color="primary" className={styles.fab}>
-        <AddIcon />
+      <Fab
+        component={Link}
+        to="/proof/foo"
+        variant="extended"
+        color="secondary"
+        className={styles.fab}
+      >
+        <AddIcon className={styles.extendedIcon} />
+        New Proof
       </Fab>
     </div>
   );

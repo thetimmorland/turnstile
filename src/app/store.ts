@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import proofReducer from "features/proofs/proofSlice";
+import proofReducer from "features/proofs/proofsSlice";
 
 const store = configureStore({
   reducer: {
